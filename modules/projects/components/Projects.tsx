@@ -16,18 +16,10 @@ const Projects = () => {
 
   const t = useTranslations("ProjectsPage");
 
-  const filteredProjects: ProjectItem[] = data
-    ?.filter((item: ProjectItem) => item?.is_show)
-    .sort((a: ProjectItem, b: ProjectItem) => {
-      if (a.is_featured && !b.is_featured) return -1;
-      if (!a.is_featured && b.is_featured) return 1;
+  // Hapus filter is_show dan is_featured karena tidak ada di database
+  const projects = data || [];
 
-      if (a.is_featured && b.is_featured) return a.id - b.id;
-
-      return b.id - a.id;
-    });
-
-  if (filteredProjects?.length === 0) {
+  if (projects.length === 0) {
     return <EmptyState message={t("no_data")} />;
   }
 
@@ -41,7 +33,7 @@ const Projects = () => {
 
   return (
     <section className="grid grid-cols-1 gap-6 md:grid-cols-2">
-      {filteredProjects?.map((project, index) => (
+      {projects.map((project, index) => (
         <motion.div
           key={index}
           initial={{ opacity: 0, scale: 0.8 }}
