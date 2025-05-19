@@ -16,16 +16,39 @@ const AchievementCard = ({
   image,
   url_credential,
 }: AchievementItem) => {
-  const issueDate = format(parseISO(issue_date), "MMMM yyyy");
+  // Validasi tanggal agar tidak error jika kosong/tidak valid
+  let issueDate = "-";
+  if (issue_date) {
+    try {
+      issueDate = format(parseISO(issue_date), "MMMM yyyy");
+    } catch {
+      issueDate = issue_date;
+    }
+  }
 
   const t = useTranslations("AchievementsPage");
 
+  // Validasi url_credential agar tidak error jika null/undefined
+  const linkHref = url_credential || "#";
+  const isLinkActive = !!url_credential;
+
   return (
-    <Link href={url_credential} className="flex h-full" target="_blank">
+    <Link
+      href={linkHref}
+      className="flex h-full"
+      target={isLinkActive ? "_blank" : undefined}
+      tabIndex={isLinkActive ? 0 : -1}
+      aria-disabled={!isLinkActive}
+    >
       <Card className="group flex h-full flex-col overflow-hidden">
         <div className="relative">
+          {/* Validasi src gambar agar tidak error jika kosong/tidak valid */}
           <Image
-            src={image}
+            src={
+              image && image.trim().startsWith("/images/")
+                ? image.trimEnd()
+                : "/images/achievements/default.png"
+            }
             alt={name}
             width={500}
             height={200}

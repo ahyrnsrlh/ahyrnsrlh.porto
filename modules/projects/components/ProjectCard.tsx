@@ -13,23 +13,24 @@ const ProjectCard = ({
   slug,
   description,
   image,
-  stacks,
-  is_featured,
+  content,
+  stack,
+  link,
+  github,
+  created_at,
+  updated_at,
 }: ProjectItem) => {
   const t = useTranslations("ProjectsPage");
 
   const trimmedContent =
     description.slice(0, 80) + (description.length > 80 ? "..." : "");
 
+  // Pastikan stack selalu array agar tidak error saat .map
+  const safeStacks = Array.isArray(stack) ? stack : [];
+
   return (
     <Link href={`/projects/${slug}`}>
       <Card className="group relative cursor-pointer">
-        {is_featured && (
-          <div className="absolute right-0 top-0 z-10 flex items-center gap-x-1 rounded-bl-lg rounded-tr-lg bg-cyan-500 px-2 py-1 text-sm font-medium text-neutral-900">
-            <PinIcon size={15} />
-            <span>Featured</span>
-          </div>
-        )}
         <div className="relative">
           <Image
             src={image}
@@ -52,7 +53,7 @@ const ProjectCard = ({
             {trimmedContent}
           </p>
           <div className="flex flex-wrap items-center gap-3 pt-2">
-            {stacks.map((stack: string, index: number) => (
+            {safeStacks.map((stack: string, index: number) => (
               <div key={index}>{STACKS[stack]}</div>
             ))}
           </div>
