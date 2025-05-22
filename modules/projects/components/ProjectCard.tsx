@@ -13,24 +13,26 @@ const ProjectCard = ({
   slug,
   description,
   image,
-  content,
-  stack,
-  link,
-  github,
-  created_at,
-  updated_at,
+  stacks = [], // Berikan nilai default array kosong
+  is_featured,
 }: ProjectItem) => {
   const t = useTranslations("ProjectsPage");
 
   const trimmedContent =
     description.slice(0, 80) + (description.length > 80 ? "..." : "");
 
-  // Pastikan stack selalu array agar tidak error saat .map
-  const safeStacks = Array.isArray(stack) ? stack : [];
+  // Pastikan stacks selalu array dan tidak null
+  const safeStacks = Array.isArray(stacks) ? stacks : [];
 
   return (
     <Link href={`/projects/${slug}`}>
       <Card className="group relative cursor-pointer">
+        {is_featured && (
+          <div className="absolute right-0 top-0 z-10 flex items-center gap-x-1 rounded-bl-lg rounded-tr-lg bg-cyan-500 px-2 py-1 text-sm font-medium text-neutral-900">
+            <PinIcon size={15} />
+            <span>Featured</span>
+          </div>
+        )}
         <div className="relative">
           <Image
             src={image}
