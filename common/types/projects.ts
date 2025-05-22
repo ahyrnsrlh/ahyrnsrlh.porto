@@ -1,17 +1,17 @@
 export type ProjectItem = {
-  id: string;
+  id: number;
   title: string;
   slug: string;
   description: string;
   image: string;
+  link_demo?: string | null;
+  link_github?: string | null;
+  stacks: string[];
   content?: string | null;
-  stack: string[];
-  link?: string | null;
-  github?: string | null;
-  created_at: string;
-  updated_at: string;
+  is_show: boolean;
+  is_featured: boolean;
 };
 
 export type ProjectItemProps = {
   projects: ProjectItem[];
-};
+}
