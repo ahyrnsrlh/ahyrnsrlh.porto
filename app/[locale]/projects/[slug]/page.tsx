@@ -9,14 +9,19 @@ import { METADATA } from "@/common/constants/metadata";
 import { loadMdxFiles } from "@/common/libs/mdx";
 import { getProjectsDataBySlug } from "@/services/projects";
 
-interface ProjectDetailPageProps {
-  params: { slug: string };
-}
-
-export const generateMetadata = async ({
+export async function generateMetadata({ 
   params,
-}: ProjectDetailPageProps): Promise<Metadata> => {
-  const project = await getProjectDetail(params?.slug);
+  searchParams 
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
+}): Promise<Metadata> {
+  const resolvedParams = await params;
+  if (!resolvedParams?.slug) {
+    return {};
+  }
+
+  const project = await getProjectDetail(resolvedParams.slug);
 
   return {
     title: `${project.title} ${METADATA.exTitle}`,
@@ -31,10 +36,10 @@ export const generateMetadata = async ({
     },
     keywords: project.title,
     alternates: {
-      canonical: `${process.env.DOMAIN}/projects/${params.slug}`,
+      canonical: `${process.env.DOMAIN}/projects/${resolvedParams.slug}`,
     },
   };
-};
+}
 
 const getProjectDetail = async (slug: string): Promise<ProjectItem> => {
   const projects = await getProjectsDataBySlug(slug);
@@ -45,8 +50,19 @@ const getProjectDetail = async (slug: string): Promise<ProjectItem> => {
   return data;
 };
 
-const ProjectDetailPage = async ({ params }: ProjectDetailPageProps) => {
-  const data = await getProjectDetail(params?.slug);
+export default async function ProjectDetailPage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+  searchParams?: Promise<{ [key: string]: string | string[] | undefined }>;
+}) {
+  const resolvedParams = await params;
+  if (!resolvedParams?.slug) {
+    return null;
+  }
+
+  const data = await getProjectDetail(resolvedParams.slug);
 
   const PAGE_TITLE = data?.title;
   const PAGE_DESCRIPTION = data?.description;
@@ -58,6 +74,4 @@ const ProjectDetailPage = async ({ params }: ProjectDetailPageProps) => {
       <ProjectDetail {...data} />
     </Container>
   );
-};
-
-export default ProjectDetailPage;
+}

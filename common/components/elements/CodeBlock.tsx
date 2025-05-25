@@ -1,11 +1,6 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import css from "react-syntax-highlighter/dist/cjs/languages/prism/css";
-import diff from "react-syntax-highlighter/dist/cjs/languages/prism/diff";
-import javascript from "react-syntax-highlighter/dist/cjs/languages/prism/javascript";
-import tsx from "react-syntax-highlighter/dist/cjs/languages/prism/tsx";
-import typescript from "react-syntax-highlighter/dist/cjs/languages/prism/typescript";
 import { useEffect, useState } from "react";
 import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import { a11yDark as themeColor } from "react-syntax-highlighter/dist/cjs/styles/prism";
@@ -24,12 +19,6 @@ const languages = {
   css: "css",
 };
 
-SyntaxHighlighter.registerLanguage(languages.javascript, javascript);
-SyntaxHighlighter.registerLanguage(languages.typescript, typescript);
-SyntaxHighlighter.registerLanguage(languages.diff, diff);
-SyntaxHighlighter.registerLanguage(languages.tsx, tsx);
-SyntaxHighlighter.registerLanguage(languages.css, css);
-
 const CodeBlock = ({
   className = "",
   children,
@@ -39,6 +28,35 @@ const CodeBlock = ({
   const [isCopied, setIsCopied] = useState<boolean>(false);
   const [value, copy] = useCopyToClipboard();
   const match = /language-(\w+)/.exec(className || "");
+  const [isLanguagesLoaded, setIsLanguagesLoaded] = useState(false);
+
+  useEffect(() => {
+    const loadLanguages = async () => {
+      const [
+        { default: javascript },
+        { default: typescript },
+        { default: diff },
+        { default: tsx },
+        { default: css }
+      ] = await Promise.all([
+        import('react-syntax-highlighter/dist/cjs/languages/prism/javascript'),
+        import('react-syntax-highlighter/dist/cjs/languages/prism/typescript'),
+        import('react-syntax-highlighter/dist/cjs/languages/prism/diff'),
+        import('react-syntax-highlighter/dist/cjs/languages/prism/tsx'),
+        import('react-syntax-highlighter/dist/cjs/languages/prism/css')
+      ]);
+
+      SyntaxHighlighter.registerLanguage(languages.javascript, javascript);
+      SyntaxHighlighter.registerLanguage(languages.typescript, typescript);
+      SyntaxHighlighter.registerLanguage(languages.diff, diff);
+      SyntaxHighlighter.registerLanguage(languages.tsx, tsx);
+      SyntaxHighlighter.registerLanguage(languages.css, css);
+      
+      setIsLanguagesLoaded(true);
+    };
+
+    loadLanguages();
+  }, []);
 
   const handleCopy = (code: string) => {
     copy(code);
@@ -54,6 +72,10 @@ const CodeBlock = ({
       return () => clearTimeout(timeout);
     }
   }, [isCopied]);
+
+  if (!isLanguagesLoaded) {
+    return <div className="animate-pulse h-32 bg-neutral-800 rounded-lg" />;
+  }
 
   return (
     <>
