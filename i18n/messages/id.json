@@ -35,51 +35,58 @@
       "sub_title": "Perjalanan karier profesional saya.",
       "careers": {
         "career_0": {
-          "position": "Kepala Teknologi di Divisi Riset dan Teknologi",
-          "company": "Himpunan Mahasiswa Sistem Informasi Universitas Jambi (HIMASI UNJA)",
-          "logo": "/images/careers/himasi-unja.jpeg",
-          "location": "Jambi, Indonesia 🇮🇩",
-          "location_type": "Di Tempat",
+          "position": "Web Developer & UI/UX Designer",
+          "company": "Infinite Learning",
+          "logo": "/images/careers/infinitee.jpg",
+          "location": "Batam, Indonesia 🇮🇩",
+          "location_type": "Remote",
           "type": "Paruh Waktu",
-          "start_date": "2024-01",
-          "end_date": null,
-          "industry": "sekolah",
-          "link": "https://himasi.unja.ac.id/"
-        },
-        "career_1": {
-          "position": "Kohort Pengembangan Mobile",
-          "company": "Bangkit Academy yang dipimpin oleh Google, Tokopedia, Gojek & Traveloka",
-          "logo": "/images/careers/bangkit.png",
-          "location": "Bandung, Indonesia 🇮🇩",
-          "location_type": "Jarak Jauh",
-          "type": "Paruh Waktu",
-          "start_date": "2024-12",
-          "end_date": "2025-12",
-          "industry": "sekolah",
-          "link": "https://grow.google/intl/id_id/bangkit/?tab=mobile-development",
+          "start_date": "2024-09",
+          "end_date": "2024-12",
+          "industry": "teknologi",
+          "link": "https://www.instagram.com/infinitelearning_id/?hl=en",
           "responsibilities": {
-            "responsibility_1": "Menguasai pengembangan Android menggunakan Kotlin, Komponen Jetpack, dan alat modern seperti Room Database dan DataStore untuk manajemen status dan data.",
-            "responsibility_2": "Mendapatkan pengalaman langsung dengan ViewModel, RecyclerView, dan Hilt untuk injeksi ketergantungan untuk membuat aplikasi mobile yang kuat dan dapat diskalakan.",
-            "responsibility_3": "Berkolaborasi dengan tim lintas fungsi untuk mengembangkan Proyek Capstone Berbasis Perusahaan, menerapkan metodologi Agile dan pemecahan masalah dunia nyata.",
-            "responsibility_4": "Meningkatkan keterampilan kerja tim, pemecahan masalah, dan komunikasi dalam lingkungan multikultural."
+            "responsibility_1": "Memimpin tim dengan menggunakan metodologi Scrum dan memastikan proses pengembangan proyek berjalan lancar.",
+            "responsibility_2": "Memfasilitasi komunikasi antara pemangku kepentingan dan tim, serta memprioritaskan backlog bersama Product Owner.",
+            "responsibility_3": "Merancang wireframe, mockup, dan prototipe berdasarkan riset pengguna dan analisis kebutuhan.",
+            "responsibility_4": "Mengembangkan sistem desain yang konsisten dan bekerja sama dengan developer untuk memastikan implementasi yang tepat.",
+            "responsibility_5": "Membangun antarmuka frontend yang responsif dan modern menggunakan React dan Tailwind CSS."
+          }
+        },
+
+        "career_1": {
+          "position": "Staf Komunikasi dan Informasi",
+          "company": "Badan Eksekutif Mahasiswa Universitas Lampung (BEM U KBM Unila)",
+          "logo": "/images/careers/bangkit.png",
+          "location": "Lampung, Indonesia 🇮🇩",
+          "location_type": "onsite",
+          "type": "Paruh Waktu",
+          "start_date": "2023-02",
+          "end_date": "2024-02",
+          "industry": "pendidikan",
+          "link": "https://www.instagram.com/bem_unila/?hl=en",
+          "responsibilities": {
+            "responsibility_1": "Memimpin dan mengoordinasikan tim dalam mengembangkan konsep kreatif dan materi promosi untuk berbagai acara/program yang diselenggarakan oleh BEM Unila.",
+            "responsibility_2": "Mengambil foto kegiatan, acara, dan anggota untuk mendokumentasikan momen penting secara visual dan membagikannya di berbagai platform kami, dengan memastikan kualitas gambar yang tinggi yang mencerminkan semangat dan tujuan organisasi.",
+            "responsibility_3": "Membuat desain yang menarik dan berdampak untuk materi promosi, postingan media sosial, spanduk acara, dan konten digital lainnya yang selaras dengan branding dan tujuan komunikasi kami.",
+            "responsibility_4": "Merencanakan, merekam, dan memproduksi video untuk berbagai kebutuhan organisasi, termasuk dokumentasi acara, video promosi, dan wawancara. Saya bekerja dengan teknik pencahayaan, framing, dan audio untuk menghasilkan konten video yang menarik secara visual."
           }
         },
         "career_2": {
-          "position": "Pengembang Mobile",
-          "company": "Pt. Amanah Karya Indonesia (Amanah Corp)",
-          "logo": "/images/careers/amanah-karya-indonesia.jpeg",
-          "location": "Depok, Indonesia 🇮🇩",
-          "location_type": "Jarak Jauh",
-          "type": "Magang",
-          "start_date": "2024-12",
-          "end_date": "2025-12",
+          "position": "Staf Media Informasi",
+          "company": "Himpunan Mahasiswa Ilmu Komputer Universitas Lampung (HIMAKOM UNILA)",
+          "logo": "/images/careers/himasi-unja.jpeg",
+          "location": "Lampung, Indonesia 🇮🇩",
+          "location_type": "Di Tempat",
+          "type": "Paruh Waktu",
+          "start_date": "2023-02",
+          "end_date": "2024-02",
           "industry": "sekolah",
-          "link": "https://amanahcorp.co.id/",
+          "link": "https://www.instagram.com/himakomunila/?hl=en",
           "responsibilities": {
-            "responsibility_1": "Merancang dan mengembangkan aplikasi mobile menggunakan Kotlin, menggabungkan Room Database, Hilt, dan ViewModel untuk kinerja dan skalabilitas yang optimal.",
-            "responsibility_2": "Menerapkan fitur yang aman dan ramah pengguna yang disesuaikan dengan platform berbagi.link untuk meningkatkan keterlibatan dan aksesibilitas pengguna.",
-            "responsibility_3": "Bekerja sama dengan PT Amanah Corp untuk memastikan keselarasan dengan tujuan bisnis dan memberikan solusi dunia nyata yang berdampak.",
-            "responsibility_4": "Memperkuat keterampilan teknis dan keterampilan lunak, termasuk pemecahan masalah, kerja tim, dan komunikasi, dalam lingkungan profesional yang multikultural."
+            "responsibility_1": "Mengambil foto acara, aktivitas, dan anggota untuk mendokumentasikan momen-momen penting secara visual dan membagikannya di seluruh platform kami, memastikan gambar berkualitas tinggi yang mencerminkan semangat dan tujuan organisasi kami.",
+            "responsibility_2": "Membuat desain yang menarik secara visual dan berdampak untuk materi promosi, postingan media sosial, spanduk acara, dan konten digital yang selaras dengan tujuan branding dan komunikasi kami.",
+            "responsibility_3": "Merencanakan, merekam, dan memproduksi video untuk berbagai kebutuhan organisasi, termasuk rekap acara, video promosi, dan wawancara. Saya bekerja dengan teknik pencahayaan, pembingkaian, dan audio untuk membuat konten video yang menarik secara visual."
           }
         }
       }
@@ -87,14 +94,14 @@
     "education": {
       "title": "Pendidikan",
       "sub_title": "Perjalanan pendidikan saya.",
-      "school": "Universitas Jambi",
-      "major": "Sistem Informasi, (S.Kom)",
-      "logo": "/images/education/unja.png",
-      "location": "Jambi, Indonesia 🇮🇩",
+      "school": "Universitas Lampung",
+      "major": "Ilmu Komputer, (S.Kom)",
+      "logo": "/images/education/unila.png",
+      "location": "Lampung, Indonesia 🇮🇩",
       "degree": "Gelar Sarjana",
       "start_year": 2022,
       "end_year": 2026,
-      "link": "https://www.unja.ac.id"
+      "link": "https://www.unila.ac.id"
     },
     "resume_download_button": "Unduh Resume",
     "portfolio_download_button": "Unduh Portofolio"

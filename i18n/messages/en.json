@@ -24,7 +24,7 @@
     "title": "About",
     "description": "A short story of me",
     "resume": {
-      "paragraf_1": "Hello there! Thank you for visiting my personal website. I'm Ahyar Nasrullah Adilian, a student majoring in Information Systems at the University of Jambi. I have a strong interest in frontend development. With a solid foundation in JavaScript and TypeScript, as well as a comprehensive understanding of various frontend libraries and frameworks, I have navigated the ever-evolving landscape of web development with enthusiasm and dedication.",
+      "paragraf_1": "Hello there! Thank you for visiting my personal website. I'm Ahyar Nasrullah Adilian, a student majoring in Computer Science at the University of Lampung. I have a strong interest in frontend development. With a solid foundation in JavaScript and TypeScript, as well as a comprehensive understanding of various frontend libraries and frameworks, I have navigated the ever-evolving landscape of web development with enthusiasm and dedication.",
 
       "paragraf_2": "I focus on creating web applications that not only provide precise experiences but are also user-friendly. My specialization includes JavaScript and TypeScript, along with frameworks such as React, Vite, and Next.js. As a quick learner and adaptive thinker, I thrive in a dynamic environment where innovation is a driving force. My collaborative nature allows me to seamlessly integrate with teams, contributing not only to my technical skills but also embodying a humble attitude that values input from every team member.",
 
@@ -35,51 +35,59 @@
       "sub_title": "My professional career journey.",
       "careers": {
         "career_0": {
-          "position": "Head of Technology in the Research and Technology Division",
-          "company": "Himpunan Mahasiswa Sistem Informasi Universitas Jambi (HIMASI UNJA)",
-          "logo": "/images/careers/himasi-unja.jpeg",
-          "location": "Jambi, Indonesia 🇮🇩",
-          "location_type": "Onsite",
-          "type": "Part-time",
-          "start_date": "2024-01",
-          "end_date": null,
-          "industry": "school",
-          "link": "https://himasi.unja.ac.id/"
-        },
-        "career_1": {
-          "position": "Mobile Development Cohort",
-          "company": "Bangkit Academy led by Google, Tokopedia, Gojek & Traveloka",
-          "logo": "/images/careers/bangkit.png",
-          "location": "Bandung, Indonesia 🇮🇩",
+          "position": "Web Developer & UI/UX Designer",
+          "company": "Infinite Learning",
+          "logo": "/images/careers/infinitee.jpg",
+          "location": "Batam, Indonesia 🇮🇩",
           "location_type": "Remote",
-          "type": "Part-time",
-          "start_date": "2024-12",
-          "end_date": "2025-12",
+          "type": "Full-time",
+          "start_date": "2024-09",
+          "end_date": "2024-12",
           "industry": "school",
-          "link": "https://grow.google/intl/id_id/bangkit/?tab=mobile-development",
+          "link": "https://www.instagram.com/infinitelearning_id/?hl=en",
           "responsibilities": {
-            "responsibility_1": "Mastered Android development using Kotlin, Jetpack Components, and modern tools like Room Database and DataStore for state and data management.",
-            "responsibility_2": "Gained hands-on experience with ViewModel, RecyclerView, and Hilt for dependency injection to create robust and scalable mobile applications.",
-            "responsibility_3": "Collaborated with a cross-functional team to develop a Company-Based Capstone Project, applying Agile methodologies and real-world problem-solving.",
-            "responsibility_4": "Enhanced teamwork, problem-solving, and communication skills in a multicultural environment."
+            "responsibility_1": "Led the team using Scrum methodology and ensured smooth project development processes.",
+            "responsibility_2": "Facilitated communication between stakeholders and the team, while prioritizing the backlog with the Product Owner.",
+            "responsibility_3": "Designed wireframes, mockups, and prototypes based on user research and needs analysis.",
+            "responsibility_4": "Developed a consistent design system and collaborated with developers to ensure proper implementation.",
+            "responsibility_5": "Built responsive and modern frontend interfaces using React and Tailwind CSS."
           }
         },
-        "career_2": {
-          "position": "Mobile Developer",
-          "company": "Pt. Amanah Karya Indonesia (Amanah Corp)",
-          "logo": "/images/careers/amanah-karya-indonesia.jpeg",
-          "location": "Depok, Indonesia 🇮🇩",
-          "location_type": "Remote",
-          "type": "Internship",
-          "start_date": "2024-12",
-          "end_date": "2025-12",
+        
+        "career_1": {
+          "position": "Communication and Information Staff",
+          "company": "Badan Eksekutif Mahasiswa Universitas Lampung (BEM U KBM Unila)",
+          "logo": "/images/careers/bangkit.png",
+          "location": "Lampung, Indonesia 🇮🇩",
+          "location_type": "onsite",
+          "type": "Part-time",
+          "start_date": "2023-02",
+          "end_date": "2024-02",
           "industry": "school",
-          "link": "https://amanahcorp.co.id/",
+          "link": "https://www.instagram.com/bem_unila/?hl=en",
           "responsibilities": {
-            "responsibility_1": "Designed and developed a mobile application using Kotlin, incorporating Room Database, Hilt, and ViewModel for optimal performance and scalability.",
-            "responsibility_2": "Implemented secure and user-friendly features tailored to the berbagi.link platform to improve user engagement and accessibility.",
-            "responsibility_3": "Worked closely with PT Amanah Corp to ensure alignment with business objectives and deliver impactful, real-world solutions.",
-            "responsibility_4": "Strengthened technical and soft skills, including problem-solving, teamwork, and communication, in a professional, multicultural setting."
+            "responsibility_1": "Lead and coordinate a team in developing creative concepts and promotional materials for various events/programs organized by BEM Unila.",
+            "responsibility_2": "Capturing photos of events, activities, and members to visually document key moments and share them across our platforms, ensuring high-quality images that reflect the spirit and purpose of our organization.",
+            "responsibility_3": "Creating visually appealing and impactful designs for promotional materials, social media posts, event banners, and digital content that align with our branding and communication goals.",
+            "responsibility_4": "Planning, shooting, and producing videos for various organizational needs, including event recaps, promotional videos, and interviews. I work with lighting, framing, and audio techniques to create visually compelling video content."
+          }
+        },
+
+        "career_2": {
+          "position": "Information Media Staff",
+          "company": "Himpunan Mahasiswa Ilmu Komputer Universitas Lampung (HIMAKOM UNILA)",
+          "logo": "/images/careers/himasi-unja.jpeg",
+          "location": "Lampung, Indonesia 🇮🇩",
+          "location_type": "Onsite",
+          "type": "Part-time",
+          "start_date": "2023-02",
+          "end_date": "2024-02",
+          "industry": "school",
+          "link": "https://www.instagram.com/himakomunila/?hl=en",
+          "responsibilities": {
+            "responsibility_1": "Capturing photos of events, activities, and members to visually document key moments and share them across our platforms, ensuring high-quality images that reflect the spirit and purpose of our organization.",
+            "responsibility_2": "Creating visually appealing and impactful designs for promotional materials, social media posts, event banners, and digital content that align with our branding and communication goals.",
+            "responsibility_3": "Planning, shooting, and producing videos for various organizational needs, including event recaps, promotional videos, and interviews. I work with lighting, framing, and audio techniques to create visually compelling video content."
           }
         }
       }
@@ -87,14 +95,14 @@
     "education": {
       "title": "Education",
       "sub_title": "My educational journey.",
-      "school": "Jambi University",
-      "major": "Information Systems, (S.Kom)",
-      "logo": "/images/education/unja.png",
-      "location": "Jambi, Indonesia 🇮🇩",
+      "school": "Lampung University",
+      "major": "Computer Science, (S.Kom)",
+      "logo": "/images/education/unila.png",
+      "location": "Lampung, Indonesia 🇮🇩",
       "degree": "Bachelor's degree",
       "start_year": 2022,
       "end_year": 2026,
-      "link": "https://www.unja.ac.id"
+      "link": "https://www.unila.ac.id"
     },
     "resume_download_button": "Download Resume",
     "portfolio_download_button": "Download Portfolio"
